@@ -5,48 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Calculator</title>
+    <title>Homepage | Calculator</title>
 </head>
 
-<body>
-    <header id="screen">
-        <h3>Calculator</h3>
-        <div class="inputdisplay-container">
-            <input type="text" name="displayscreen" class="inputdisplay" disabled>
-            <button type="button" class="clearbutton">Clr</button>
-        </div>
+<body class="body">
+    <header class="pageheading">
+        <h1 class="pageheader">Calculator:An easy way for Arithmetic Calculations</h1>
+        <nav class="navmenu">
+            <a href="./otherpages/calculator.html">Calculator</a>
+            <a href="./otherpages/about.html">About The Creators</a>
+        </nav>
     </header>
     <main>
-        <section id="key-container">
-            <div class="row">
-                <button type="button" value="1" onclick="updateDisplay('1')">1</button>
-                <button type="button" value="2" onclick="updateDisplay('2')">2</button>
-                <button type="button" value="3" onclick="updateDisplay('3')">3</button>
-                <button type="button" value="/" onclick="operator('/')">/</button>
+        <article class="content">
+            <div class="introduction to calculator">
+                <p>
+                    As we all know that the everyone from a kindergardener to an adult needs to perform 
+                    some calculations. From starting to learn the basic arithmetic operations to  
+                </p>
             </div>
-            <div class="row">
-                <button type="button" value="4" onclick="updateDisplay('4')">4</button>
-                <button type="button" value="5" onclick="updateDisplay('5')">5</button>
-                <button type="button" value="6" onclick="updateDisplay('6')">6</button>
-                <button type="button" value="-" onclick="operator('-')">-</button>
-            </div>
-            <div class="row">
-                <button type="button" value="7" onclick="updateDisplay('7')">7</button>
-                <button type="button" value="8" onclick="updateDisplay('8')">8</button>
-                <button type="button" value="9" onclick="updateDisplay('9')">9</button>
-                <button type="button" value="+" onclick="operator('+')">+</button>
-            </div>
-            <div class="row">
-                <button type="button" value="." onclick="updateDisplay('.')">.</button>
-                <button type="button" value="0" onclick="updateDisplay('0')">0</button>
-                <button type="button" value="=" onclick="calculate()" class="colouredbutton">
-                    =
-                </button>
-                <button type="button" value="*" onclick="operator('*')">*</button>
-            </div>
-        </section>
+        </article>
     </main>
-    <script src="./script.js">
-    </script>
 </body>
 </html>

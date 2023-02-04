@@ -30,10 +30,10 @@ function operate (operator, a, b) {
 let displayValue = ""
 
 function updateDisplay(value) {
-    document.querySelector(".inputdisplay-container .inputdisplay").textContent = value
+    document.querySelector(".top .display").textContent = value
 }
 
-document.querySelector(".inputdisplay-container button").addEventListener("click", e => {
+document.querySelector(".top button").addEventListener("click", e => {
     displayValue = ""
     updateDisplay("")
 })
