@@ -1,18 +1,11 @@
 :root{
     --white-color:rgb(232, 236, 241);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-section:nth-child(2n) {
-    background-color: #9e9b9b29;
-}
-
-section:nth-child(2n + 1) {
-    background-color: white;
 }
 
 .pageheader{
@@ -51,11 +44,19 @@ section:nth-child(2n + 1) {
     font-weight: 300;
 }
 
-@media screen and (max-width:1000px) {
-    
+@media screen and (max-width:990px) {
+    .pageheader .navmenu {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
-    
+    .pageheader .navmenu a{
+        font-size: 15px;
+        text-align: right;
+        margin-bottom: 5px;
+    }    
 }
+
 
 #aboutcalculator{
  margin:0px;
